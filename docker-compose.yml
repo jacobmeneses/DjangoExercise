@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  django:
+    image: custom-django
+    ports:
+      - "8100:8000"
+    volumes:
+      - "$PWD:/var/lib/app"
+
