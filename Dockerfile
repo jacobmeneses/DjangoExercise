@@ -6,4 +6,6 @@ RUN mkdir /var/lib/app
 WORKDIR /var/lib/app
 EXPOSE 8000
 
+RUN pip install psycopg2
+
 CMD tail -f /dev/null

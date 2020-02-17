@@ -7,4 +7,8 @@ services:
       - "8100:8000"
     volumes:
       - "$PWD:/var/lib/app"
+  db:
+    image: postgres:12.2
+    environment:
+      POSTGRES_PASSWORD: example
 
